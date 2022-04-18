@@ -88,6 +88,7 @@ Cocriação -> Ferramenta Miro
 # Tutorial GIT
 
 Como inicializar repositórios -> 
+
 git init . ou git inid <caminho_do_diretório> REPOSITÓRIO LOCAL.  também da pra criar diretamente no github e depois clonar o repositório.
 git remote add origin git@github.com:username/new_repo para criar o repositório no github.
 

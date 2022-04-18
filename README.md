@@ -8,4 +8,4 @@ Python
 
 # Resumo
 
-Testes escritos para funções presentes em uma calculadora
+Testes para funções presentes em uma calculadora

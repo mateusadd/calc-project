@@ -9,3 +9,8 @@ Python
 # Resumo
 
 Testes para funções presentes em uma calculadora
+
+
+# Alunos
+
+Brian Richard Kleis, João Victor Nickler, Mateus Andrade

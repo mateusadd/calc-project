@@ -93,33 +93,40 @@ git init . ou git inid <caminho_do_diretório> REPOSITÓRIO LOCAL.  também da p
 git remote add origin git@github.com:username/new_repo para criar o repositório no github.
 
 Como fazer o primeiro commit em um projeto -> 
+
 Depois de você alterar/criar os arquivos que você deseja commitar o recomendado é checkar quais arquivos estão inclusos nas alterações dando um git status.
 Esse comando retorna os arquivos que foram adicionados ou não a todas as mudanças que serão enviadas ao repositório. Também você verifica para qual "branch" está sendo commitado as suas alterações.
 Adicionado os arquivos você deve efetuar o seguinte comando: git push -u origin <nome_da_branch>. Nesse comando será enviado para o git hub na branch que você seleciono anteriormente.
 
 Como realizar commit de mudanças ->
+
 Após você validar quai arquivos e serão enviados ao repositório e qual branch você deve utilizar o comando git  add <arquivo>  ou git add . para adicionar todos os arquivos do contexto que foram adicionados/modificados.
 git commit arquivo
 git commit -m "mensagem do commit"
 
 Como compartilhar suas mudanças com outras pessoas da equipe ->
+ 
 Caso você tenha visto algo que precise alterar na main do repositório ou alguma melhora no código do seu colega você pode abrir um merge request ou um pull request para alterar e auxiliar no projeto. Feito a aceitação esse código irá entrar para o repositório do seu colega e você irá ter colaborado. 
 
 Como desfazer alterações ->
+ 
 Quando você aceita um merge request você pode selecionar a opção "cherry-pick" ou retornar o seu commit para uma versão antiga no repositório. Porém caso seja localmente pode ser desfeito as alterações com os seguintes comandos: git checkout, git revert e git reset. 
 
 Como resolver conflitos de merge ->
+ 
 git pull - os arquivos que possam estar faltando serão atualizadas.
 git reset --mixed - desfazer mudanças e assim refazer todo o trabalho. Chato mas tem gente que faz.
 git checkout - pode ser usado para desfazer mudanças no diretório.
 
 Como usar branches ->
+ 
 git branch <nome da branch>.
 git checkout -b '<nome_da_branch>' 
 para criar uma branch e trocar para a nova branch criada.
 Normalmente utiliza-se branches para enviar para main ou para a dev. As branches podem ser criadas para criar merge requests e mergear para a main ou para a dev.
 
 Como encontrar bugs (git diff, git log, git bisect, git blame) ->
+ 
 git diff - para tentar verificar o que foi feito na diferença entre os arquivos commitados.
 git log - verificar o histórico de alterações.
 git blame - ele é usado para examinar os pontos específicos do histórico de um arquivo e obter contexto sobre quem foi o último autor que modificou a linha. É usado para explorar o histórico de código específico e responder dúvidas sobre o que, como e por que o código foi adicionado ao repositório. Após isso verificar a alteração que pode estar causando problema.
@@ -129,6 +136,7 @@ git bisect good <hash_do_commti> - commt que você sabe que não tem problemas
 git bisect bad <commit_que_voce_acha_que_tem_problema> - commit que você acha que tem problemas.
 
 Como escolher determinados commits ->
+ 
 git rebase -i HEAD~3 
 O editor de texto será aberto com as linhas representando os três últimos commits.
 pick f7f3f6d changed my name a bit
